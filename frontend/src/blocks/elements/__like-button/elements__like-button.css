@@ -1,0 +1,15 @@
+.elements__like-button {
+    min-height: 19px;
+    min-width: 22px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../../../images/heart.svg);
+    background-position: center center;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.elements__like-button:hover {
+    opacity: 0.5;
+}

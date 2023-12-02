@@ -1,0 +1,11 @@
+.elements__image {
+    display: block;
+    width: 282px;
+    height: 282px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    object-position: center center;
+    object-fit: fill;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.profile__banner {
+    display: grid;
+    max-width: 500px;
+    align-items: first baseline;
+    grid-template-areas:
+        "name button"
+        "job .";
+    gap: 0 18px;
+}
+
+@media screen and (max-width:815px) {
+    .profile__banner {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .profile__banner {
+        gap: 0 10px;
+        align-items: first baseline;
+    }
+}

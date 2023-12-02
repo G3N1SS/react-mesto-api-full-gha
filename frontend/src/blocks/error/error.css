@@ -1,0 +1,13 @@
+.error{
+    height: 35px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF0000;
+    margin: 0 36px 0px 36px;
+    display: inline-block;
+}
+
+.error:last-child{
+    margin: 0 36px 0px 36px;
+}

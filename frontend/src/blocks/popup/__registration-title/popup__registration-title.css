@@ -1,0 +1,18 @@
+.popup__registration-title{
+  text-align: center;
+  margin: 0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.21;
+  max-width: 358px;
+  margin: 0 auto 60px auto;
+}
+
+@media screen and (max-width: 400px){
+  .popup__registration-title{
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 auto 50px auto;
+    max-width: 244px;
+  }
+}

@@ -1,0 +1,8 @@
+.nothing-found__caption{
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  display: inline-block;
+  max-width: max-content;
+}

@@ -1,0 +1,11 @@
+.header__burger-menu-button_type_active{
+    border: none;
+    background-image: url(../../../../images/CloseIcon2.svg);
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.header__button-register{
+  display: inline;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  max-height: 33px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header__button-register:hover{
+  transition: ease 1s;
+  transform: scale(1.02);
+  opacity: 0.8;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width:400px){
+  .header__button-register{
+    font-size: 17px;
+    line-height: 17px;
+    margin: 0 30px 0 0;
+  }
+}

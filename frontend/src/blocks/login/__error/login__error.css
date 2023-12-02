@@ -1,0 +1,9 @@
+.login__error{
+  color: red;
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+.login__error:last-of-type{
+  margin: 10px 0 0;
+}

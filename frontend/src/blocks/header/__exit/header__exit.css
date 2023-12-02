@@ -1,0 +1,11 @@
+.header__exit{
+  color: #a9a9a9;
+  text-decoration: none;
+}
+
+.header__exit:hover{
+    transition: linear 1s;
+    opacity: 0.8;
+    scale: 1.01;
+    border-bottom: 1px solid white;
+  }

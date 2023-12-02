@@ -1,0 +1,27 @@
+.login__caption{
+  padding: 0;
+  margin: 15px auto 0 auto;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  cursor: pointer;
+  max-width: max-content;
+  text-decoration: none;
+}
+
+.login__caption:hover{
+  transition:ease-in-out 1s;
+  opacity: 0.5;
+  scale: 1.02;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width:400px){
+  .login__caption{
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

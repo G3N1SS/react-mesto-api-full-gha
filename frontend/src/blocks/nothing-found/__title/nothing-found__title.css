@@ -1,0 +1,8 @@
+.nothing-found__title{
+  color: white;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 26px;
+  display: inline-block;
+  max-width: max-content;
+}
