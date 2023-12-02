@@ -5,7 +5,7 @@ const { SECRET_KEY = 'mesto-test' } = process.env;
 
 module.exports = (req, res, next) => {
   const { authorization } = req.headers;
-  console.log(authorization)
+
   if (!authorization || !authorization.startsWith('Bearer ')) {
     next(console.log(new UnautorizedError('Необходима авторизация')));
     return;
