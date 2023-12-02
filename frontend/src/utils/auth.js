@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://api.areg.nomoredomainsmonster.ru/'
 
 function getResponceData(res){
   return res.ok ? res.json() : Promise.reject(`${res.status} ${res.statusText}`)
