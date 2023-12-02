@@ -99,9 +99,9 @@ class Api {
 }
 
 const configApi = {
-    url: 'https://api.areg.nomoredomainsmonster.ru/',
+    url: 'https://api.areg.nomoredomainsmonster.ru',
 }
-  
+
 const api = new Api(configApi);
 
 export default api

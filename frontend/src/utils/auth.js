@@ -1,4 +1,4 @@
-const baseUrl = 'https://api.areg.nomoredomainsmonster.ru/'
+const baseUrl = 'https://api.areg.nomoredomainsmonster.ru'
 
 function getResponceData(res){
   return res.ok ? res.json() : Promise.reject(`${res.status} ${res.statusText}`)
