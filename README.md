@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 51.250.14.192
 
-Frontend https://...
+Frontend https://areg.nomoredomainsmonster.ru
 
-Backend https://...
+Backend https://api.areg.nomoredomainsmonster.ru
