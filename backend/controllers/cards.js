@@ -8,7 +8,19 @@ const ForbiddenError = require('../errors/ForbiddenError');
 module.exports.addNewCard = (req, res, next) => {
   const { name, link } = req.body;
   Card.create({ name, link, owner: req.user._id })
-    .then((card) => res.status(HTTP_STATUS_CREATED).send(card))
+    .then((card) => {
+      Card.findById(card._id)
+      .orFail()
+        .populate('owner')
+        .then((data) => res.status(HTTP_STATUS_CREATED).send(data))
+        .catch((err) => {
+          if (err instanceof mongoose.Error.DocumentNotFoundError) {
+            next(new NotFoundError('Карточка с указанным _id не найдена.'));
+          } else {
+            next(err);
+          }
+        });
+    })
     .catch((err) => {
       if (err instanceof mongoose.Error.ValidationError) {
         next(new BadRequestError(err.message));
