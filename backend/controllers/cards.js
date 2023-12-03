@@ -8,7 +8,10 @@ const ForbiddenError = require('../errors/ForbiddenError');
 module.exports.addNewCard = (req, res, next) => {
   const { name, link } = req.body;
   Card.create({ name, link, owner: req.user._id })
-    .then((card) => res.status(HTTP_STATUS_CREATED).send(card))
+    .then((card) => {
+      Card.populate('owner')
+      res.status(HTTP_STATUS_CREATED).send(card)
+    })
     .catch((error) => {
       if (error instanceof mongoose.Error.ValidationError) {
         next(new BadRequestError(error.message));
