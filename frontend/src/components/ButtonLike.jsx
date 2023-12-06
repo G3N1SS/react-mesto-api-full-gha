@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import api from "../utils/api"
 
 export default function ButtonLike({ likes, cardId, ownerId }) {
-  const [isLike, setIsLike] = useState(false)
+  const [isLike, setIsLike] = useState()
   const [count, setCount] = useState(likes.length)
 
   useEffect(() => {
