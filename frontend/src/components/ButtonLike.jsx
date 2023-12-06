@@ -6,7 +6,7 @@ export default function ButtonLike({ likes, cardId, ownerId }) {
   const [count, setCount] = useState(likes.length)
 
   useEffect(() => {
-    setIsLike(likes.some(item => item.owner_id === item._id))
+    setIsLike(likes.some(item => item.owner === item))
   }, [likes, ownerId])
 
   function handleLike() {
