@@ -33,6 +33,6 @@ export default function ButtonLike({ likes, cardId, ownerId }) {
         <button className={`elements__like-button ${isLike ? 'elements__like-button_active' : ''}`} type="button" onClick={handleLike}></button>
         <p className="elements__like-count">{count}</p>
       </div>
-    </>
+    </> 
   )
 }
