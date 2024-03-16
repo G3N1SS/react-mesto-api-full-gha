@@ -8,14 +8,52 @@
   max-height: 33px;
   padding: 0;
   text-decoration: none;
+  transition: all .3s;
+  position: relative;
 }
 
 .header__button-register:hover{
-  transition: ease 1s;
-  transform: scale(1.02);
+  transform: scale(1.05);
   opacity: 0.8;
-  border-bottom: 1px solid white;
 }
+
+.header__button-register::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3%;
+  height: 1px;
+  background: white;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.header__button-register::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3%;
+  height: 1px;
+  background: white;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.header__button-register:hover::after{
+  content: '';
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
+
+.header__button-register:hover::before{
+  content: '';
+  opacity: 1;
+  width: 100%;
+}
+
 
 @media screen and (max-width:400px){
   .header__button-register{

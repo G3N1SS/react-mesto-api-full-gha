@@ -11,7 +11,7 @@ export default function Card({ card, onCardClick, onDelete }) {
       <img className="elements__image" alt={`Место: ${card.name}`} src={card.link} onClick={() => { onCardClick({ link: card.link, name: card.name }) }} />
       <div className="elements__banner">
         <h2 className="elements__name">{card.name}</h2>
-        <ButtonLike likes={card.likes} cardId={card._id} ownerId={card.owner._id}></ButtonLike>
+        <ButtonLike likes={card.likes} cardId={card._id} ownerId={currentUser._id}></ButtonLike>
       </div>
     </div>
   )

@@ -10,10 +10,19 @@
     font-weight: 400;
     cursor: pointer;
     border-radius: 2px;
+    transition: all .3s;
 }
 
 .popup__save:hover {
     opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.popup__save:active {
+    opacity: 1;
+    transform: scale(0.95);
+    background: #a9a9a9;
+    color: black;
 }
 
 @media screen and (max-width:655px) {

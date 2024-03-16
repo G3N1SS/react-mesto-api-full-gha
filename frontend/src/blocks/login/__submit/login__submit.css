@@ -12,13 +12,20 @@
   font-size: 18px;
   line-height: 22px;
   cursor: pointer;
+  transition: all .3s;
+  animation: appearing 1.4s ease-in-out;
 }
 
 .login__submit:hover{
-  transition: linear 1s;
+  transform: scale(1.05);
   opacity: 0.8;
-  scale: 1.01;
-  border-bottom: 1px solid white;
+}
+
+.login__submit:active{
+  background-color: grey;
+  color: white;
+  outline: none;
+  opacity: 1;
 }
 
 @media screen and (max-width:400px){

@@ -1,11 +1,47 @@
 .header__exit{
   color: #a9a9a9;
   text-decoration: none;
+  position: relative;
 }
 
 .header__exit:hover{
-    transition: linear 1s;
-    opacity: 0.8;
-    scale: 1.01;
-    border-bottom: 1px solid white;
-  }
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.header__exit::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3%;
+  height: 1px;
+  background: #a9a9a9;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.header__exit::before{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 3%;
+  height: 1px;
+  background: #a9a9a9;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.header__exit:hover::after{
+  content: '';
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
+
+.header__exit:hover::before{
+  content: '';
+  opacity: 1;
+  width: 100%;
+}

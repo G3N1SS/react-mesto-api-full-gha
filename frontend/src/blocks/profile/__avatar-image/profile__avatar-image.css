@@ -2,19 +2,9 @@
     border-radius: 50%;
     height: 120px;
     width: 120px;
-    object-position: center center;
-    object-fit: fill;
     z-index: 1;
-    margin: 0 28px 0 0;
-}
-
-.profile__avatar-image:hover {
-    opacity: 0.6;
-    z-index: -2;
-}
-
-@media screen and (max-width:655px) {
-    .profile__avatar-image {
-        margin: 0;
-    }
+    position: relative;
+    display: block;
+    object-fit: cover;
+    animation: appearingLeft .7s ease-in-out;
 }

@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "npm run build && scp -r ./dist/* g3n1ss@51.250.14.192:/home/g3n1ss/frontend"
+    "deploy": "npm run build && scp -r ./dist/* g3n1ss@178.154.201.207:/home/g3n1ss/frontend"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -10,13 +10,31 @@
   cursor: pointer;
   max-width: max-content;
   text-decoration: none;
+  transition: all .3s;
+  position: relative;
+  animation: appearing 1.6s ease-in-out;
 }
 
 .login__caption:hover{
-  transition:ease-in-out 1s;
   opacity: 0.5;
-  scale: 1.02;
-  border-bottom: 1px solid white;
+}
+
+.login__caption::after{
+  content: '';
+  width: 3%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  opacity: 0;
+  transition: all .7s;
+}
+
+.login__caption:hover::after{
+  content: '';
+  width: 100%;
+  opacity: 1;
 }
 
 @media screen and (max-width:400px){

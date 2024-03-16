@@ -1,0 +1,43 @@
+@keyframes appearing {
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes like {
+    0%{
+        background: url(../images/Union1.png);
+        transform: scale(0.6);
+    }
+    100%{
+        background: url(../images/Union.png);
+        transform: scale(1);
+    }
+}
+
+@keyframes appearingLeft {
+    0%{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appearingrRight {
+    0%{
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -3,11 +3,17 @@
   width: 354px;
   min-height: 27px;
   margin: 0;
-  padding: 0;
-  background-color: transparent;
+  padding: 0.3em 0 0.3em 0.3em;
+  background-color: black !important;
   border: none;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid rgba(172, 172, 172, 0.2);
   color: white;
+  animation: appearing 1s ease-in-out;
+  outline: none;
+}
+
+.login__input:last-of-type{
+  animation: appearing 1.2s ease-in-out;
 }
 
 @media screen and (max-width:400px){

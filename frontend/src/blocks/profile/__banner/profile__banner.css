@@ -6,6 +6,7 @@
         "name button"
         "job .";
     gap: 0 18px;
+    animation: appearingLeft .7s ease-in-out;
 }
 
 @media screen and (max-width:815px) {

@@ -8,4 +8,9 @@
     object-position: center center;
     object-fit: fill;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.elements__image:hover{
+    opacity: 0.8;
 }

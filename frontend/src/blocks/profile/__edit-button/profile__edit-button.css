@@ -10,9 +10,12 @@
     cursor: pointer;
     margin: 0;
     grid-area: button;
+    transition: all .3s;
+    border-radius: 4px;
 }
 
 .profile__edit-button:hover {
+    transform: scale(1.05);
     opacity: 0.6;
 }
 

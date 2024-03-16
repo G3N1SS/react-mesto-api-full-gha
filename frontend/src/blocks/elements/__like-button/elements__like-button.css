@@ -8,8 +8,10 @@
     border: none;
     background-color: white;
     cursor: pointer;
+    transition: all .3s;
 }
 
 .elements__like-button:hover {
     opacity: 0.5;
+    scale: 1.12;
 }

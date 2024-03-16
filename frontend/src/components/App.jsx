@@ -194,7 +194,7 @@ function App() {
       Promise.all([api.getInfo(localStorage.jwt), api.getCards(localStorage.jwt)])
         .then(([userEmail, dataCards]) => {
           setCurrentUser(userEmail)
-          setCards(dataCards)
+          setCards(dataCards.reverse())
           setIsLoadingCards(false)
         })
         .catch(e => console.error(`Ошибка при загрузке начальных данных ${e}`))
