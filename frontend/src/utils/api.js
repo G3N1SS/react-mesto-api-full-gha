@@ -99,7 +99,7 @@ class Api {
 }
 
 const configApi = {
-    url: 'https://api.areg.nomoredomainsmonster.ru',
+    url: 'http://localhost:3000',
 }
 
 const api = new Api(configApi);

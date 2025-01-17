@@ -10,8 +10,11 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    z-index: 20;
+    transition: all .3s;
 }
 
 .elements__delete-button:hover {
-    opacity: 0.6;
+    opacity: 1;
+    transform: scale(1.1);
 }
